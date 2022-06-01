@@ -1,7 +1,3 @@
-# Given nodeList (1,2,3,4,5,6)
-# Given edgeList [(1,2),(2,3),(2,4),(2,5),(4,6)]
-
-# Graph([1, 2, 3, 4, 5])
 
 from node import Node
 
@@ -10,32 +6,48 @@ class Graph:
     def __init__(self, nodes):
         self.nodes = nodes
 
+    def listDifference(list1, list2):
+        newList = list(set(list1) - set(list2)) + list(set(list2) -set(list1))
+        print(newList)
+        return newList
+
+    def listRemoveDuplicates(originalList):
+        newList = list( dict.fromkeys(originalList))
+        print(newList)
+        return newList
 
 
     def graphColouring(self):
-        colours = ["red","blue","green","yellow","orange","pink","purple","turquoise"]
-        nodesLength =  len(self.nodes)
-        print("Number of nodes: ", nodesLength)
 
-        self.nodes[0].colour = colours[0]
-        print("Node 1's colour: ",self.nodes[0].colour)
+        availableColours = ["red","blue","green","yellow","orange","pink","purple","turquoise"]
+        nodesLength =  len(self.nodes)
+        
+        self.nodes[0].colour = availableColours[0]
+        
+        usedColours = []
 
         for node in self.nodes:
+           
             if node == self.nodes[0]:
                 continue
+            
+            for edgeNode in node.edges:
+                
+                if edgeNode.colour == "none":
+                    continue
+                else:
+                    usedColours.append(edgeNode.colour)
+                   
+            usedColours = Graph.listRemoveDuplicates(usedColours)
+            for colours in usedColours:
+                availableColours.remove(colours)
 
-            edgesToCheck = node.edges
-            print("Here: ", edgesToCheck)
+            node.colour = availableColours[0]
+            availableColours = ["red","blue","green","yellow","orange","pink","purple","turquoise"]
             usedColours = []
-            for nodeId in node.edges:
-                for node in self.nodes:
-                    if node.nodeID == nodeId:
-                        if node.colour == "none":
-                            continue
-                        else:
-                            usedColours.append(node.colour )
+        
+        
 
-            print("Edges to check: ", edgesToCheck)
             
 
 
