@@ -1,9 +1,11 @@
 class Node:
-    def __init__(self, nodeID, edges, colour):
+    def __init__(self, nodeID):
         self.nodeID = nodeID
-        self.edges = edges
-        self.colour = colour
+        self.edges = []
+        self.colour = "none"
 
-node1 = Node(1,[(1,2),(1,5)], "none")
+
+
+
 
 
