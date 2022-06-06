@@ -3,6 +3,7 @@ class Node:
         self.nodeID = nodeID
         self.edges = []
         self.colour = "none"
+        self.data = []
 
 
 

@@ -1,0 +1,13 @@
+id,profName,degree,subject, requirement
+0, Mr A, BSc Comp Sci, Mathematics Core, compulsory
+1, Mr A, BSc Comp Sci, Statistics, elective
+2, Mr A, BSc Mathematics, Mathematics Core, compulsory
+3, Mr A, BSc Mathematics, Mathematics Lite, elective
+4, Mr B, Bcom Business, Business 101, compulsory
+5, Mr B, Bcom Accounting, Finances 101, compulsory
+6, Mr B, Bcom Accounting, Financial Maths Core, compulsory
+7, Mr B, Bcom Auditing, Tax voidance, elective
+8, Mr C, Eng Mech, Drawing 1, compulsory
+9, Mr C, Eng Mech, Drawing 2, compulsory
+10, Mr C, Eng Civil, Civil Drawing , elective
+11, Mr C, Eng Civil, Eng Maths, elective
