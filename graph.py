@@ -6,20 +6,14 @@ class Graph:
     def __init__(self, nodes):
         self.nodes = nodes
 
-    def listDifference(list1, list2):
-        newList = list(set(list1) - set(list2)) + list(set(list2) -set(list1))
-        print(newList)
-        return newList
-
-    def listRemoveDuplicates(originalList):
+    def listRemoveDuplicates(self, originalList):
         newList = list( dict.fromkeys(originalList))
-        print(newList)
         return newList
 
 
     def graphColouring(self):
 
-        availableColours = ["red","blue","green","yellow","orange","pink","purple","turquoise"]
+        availableColours = ["red","blue","green","yellow","orange","pink","purple","turquoise", "black", "grey", "silver", "lime", "teal", "navy", "salom"]
         # nodesLength =  len(self.nodes)
         
         self.nodes[0].colour = availableColours[0]
@@ -38,12 +32,12 @@ class Graph:
                 else:
                     usedColours.append(edgeNode.colour)
                    
-            usedColours = Graph.listRemoveDuplicates(usedColours)
+            usedColours = self.listRemoveDuplicates(usedColours)
             for colours in usedColours:
                 availableColours.remove(colours)
 
             node.colour = availableColours[0]
-            availableColours = ["red","blue","green","yellow","orange","pink","purple","turquoise"]
+            availableColours = ["red","blue","green","yellow","orange","pink","purple","turquoise", "black", "grey", "silver", "lime", "teal", "navy", "salom"]
             usedColours = []
         
         

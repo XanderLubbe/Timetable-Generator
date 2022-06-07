@@ -1,3 +1,4 @@
+from tableGenerator import TableGenerator
 from edgeHandler import EdgeHandler
 from entryHandler import EntryHandler
 from dataHandler import DataHandler
@@ -37,13 +38,14 @@ nodeData = entryHandler.createNodes()
 edgeHandler = EdgeHandler(nodeData)
 edgeHandler.createEdges()
 
-
 myGraph = Graph(nodeData)
 myGraph.graphColouring()
+
+myTableGen = TableGenerator(nodeData)
+myTableGen.generateTable()
 
 drawGraph = GraphDrawer(nodeData)
 drawGraph.draw()
 
-for node in nodeData:
-    print(node.nodeID)
+
 

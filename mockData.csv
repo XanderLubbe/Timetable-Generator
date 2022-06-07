@@ -11,10 +11,10 @@
 9, Mr C, Eng Mech,Subject 109, compulsory
 10, Mr C, Eng Civil,Subject 110, compulsory
 11, Mr C, Eng Civil,Subject 111, compulsory
-12, Mr D, BSc Comp Sci,Subject 112, compulsory
+12, Mr D, BSc Comp Sci,Subject 112, elective
 13, Mr D, BSc Comp Sci,Subject 113, compulsory
-14, Mr D, BSc Mathematics,Subject 114, compulsory
-15, Mr E, BSc Mathematics,Subject 115, compulsory
+14, Mr D, BSc Mathematics,Subject 114, elective
+15, Mr E, BSc Mathematics,Subject 115, elective
 16, Mr E, Bcom Business,Subject 116, compulsory
 17, Mr E, BSc Comp Sci,Subject 117, compulsory
 18, Mr E, BSc Comp Sci,Subject 118, compulsory
@@ -25,6 +25,35 @@
 23, Mr Y, Bcom Accounting,Subject 123, compulsory
 24, Mr Y, Bcom Auditing,Subject 124, compulsory
 25, Mr Z, Eng Mech,Subject 125, compulsory
-26, Mr Z, Eng Mech,Subject 126, compulsory
+26, Mr Z, Eng Mech,Subject 126, elective
 27, Mr Z, Eng Civil,Subject 127, compulsory
-28, Mr Z, Eng Civil,Subject 128, compulsory
+28, Mr Z, Eng Civil,Subject 128, elective
+29, Mr Z, BSc Comp Sci,Subject 129, compulsory
+30, Mr E, BSc Comp Sci,Subject 130, compulsory
+31, Mr E, BSc Mathematics,Subject 131, compulsory
+32, Mr E, BSc Mathematics,Subject 132, elective
+33, Mr E, Bcom Business,Subject 133, compulsory
+34, Mr E, Bcom Accounting,Subject 134, compulsory
+35, Mr F, Bcom Accounting,Subject 135, compulsory
+36, Mr F, Bcom Auditing,Subject 136, compulsory
+37, Mr F, Eng Mech,Subject 137, elective
+38, Mr F, Eng Mech,Subject 138, compulsory
+39, Mr F, Eng Civil,Subject 139, elective
+40, Mr F, Eng Civil,Subject 140, elective
+41, Mr F, BSc Comp Sci,Subject 141, compulsory
+42, Mr F, BSc Comp Sci,Subject 142, compulsory
+43, Mr G, BSc Mathematics,Subject 143, compulsory
+44, Mr G, BSc Mathematics,Subject 144, compulsory
+45, Mr G, Bcom Business,Subject 145, compulsory
+46, Mr H, BSc Comp Sci,Subject 146, compulsory
+47, Mr H, BSc Comp Sci,Subject 147, compulsory
+48, Mr H, BSc Mathematics,Subject 148, compulsory
+49, Mr H, BSc Mathematics,Subject 149, compulsory
+50, Mr H, Bcom Business,Subject 150,elective
+51, Mr H, Bcom Accounting,Subject 151, compulsory
+52, Mr I, Bcom Accounting,Subject 152,elective
+53, Mr I, Bcom Auditing,Subject 153, compulsory
+54, Mr I, Eng Mech,Subject 154,elective
+55, Mr I, Eng Mech,Subject 155,elective
+56, Mr I, Eng Civil,Subject 156,elective
+,,,,

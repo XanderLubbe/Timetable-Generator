@@ -6,7 +6,7 @@ class EdgeHandler:
         self.nodes = nodes
     
     def createEdges(self):
-# Checking professors here to create edges
+        # Checking professors here to create edges
         for node in self.nodes:
 
             currentProfName = node.data.profName
@@ -21,7 +21,7 @@ class EdgeHandler:
                 if profs.data.profName == currentProfName:
                     currentProf.edges.add(profs)
                     profs.edges.add(currentProf)
-# Checking degrees here to create edges        
+        # Checking degrees here to create edges        
         for node in self.nodes:
 
             currentDegreeName = node.data.degree
