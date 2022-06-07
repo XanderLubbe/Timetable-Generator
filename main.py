@@ -1,3 +1,6 @@
+from edgeHandler import EdgeHandler
+from entryHandler import EntryHandler
+from dataHandler import DataHandler
 from graphDrawer import GraphDrawer
 from node import Node
 from graph import Graph
@@ -19,9 +22,28 @@ myNode6.edges = [myNode4]
 
 nodeArr = [myNode1, myNode2, myNode3, myNode4, myNode5, myNode6]
 
-myGraph = Graph(nodeArr)
+# myGraph = Graph(nodeArr)
+# myGraph.graphColouring()
+
+# drawGraph = GraphDrawer(nodeArr)
+# drawGraph.draw()
+
+dataHandler = DataHandler('mockData.csv')
+entryData = dataHandler.createEntries()
+
+entryHandler = EntryHandler(entryData)
+nodeData = entryHandler.createNodes()
+
+edgeHandler = EdgeHandler(nodeData)
+edgeHandler.createEdges()
+
+
+myGraph = Graph(nodeData)
 myGraph.graphColouring()
 
-drawGraph = GraphDrawer(nodeArr)
+drawGraph = GraphDrawer(nodeData)
 drawGraph.draw()
+
+for node in nodeData:
+    print(node.nodeID)
 

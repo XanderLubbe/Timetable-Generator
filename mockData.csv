@@ -1,13 +1,30 @@
-id,profName,degree,subject, requirement
-0, Mr A, BSc Comp Sci, Mathematics Core, compulsory
-1, Mr A, BSc Comp Sci, Statistics, elective
-2, Mr A, BSc Mathematics, Mathematics Core, compulsory
-3, Mr A, BSc Mathematics, Mathematics Lite, elective
-4, Mr B, Bcom Business, Business 101, compulsory
-5, Mr B, Bcom Accounting, Finances 101, compulsory
-6, Mr B, Bcom Accounting, Financial Maths Core, compulsory
-7, Mr B, Bcom Auditing, Tax voidance, elective
-8, Mr C, Eng Mech, Drawing 1, compulsory
-9, Mr C, Eng Mech, Drawing 2, compulsory
-10, Mr C, Eng Civil, Civil Drawing , elective
-11, Mr C, Eng Civil, Eng Maths, elective
+﻿id,profName,degree,subject, requirement
+0, Mr A, BSc Comp Sci,Subject 100, compulsory
+1, Mr A, BSc Comp Sci,Subject 101, elective
+2, Mr A, BSc Mathematics,Subject 102, compulsory
+3, Mr A, BSc Mathematics,Subject 103, elective
+4, Mr B, Bcom Business,Subject 104, compulsory
+5, Mr B, Bcom Accounting,Subject 105, compulsory
+6, Mr B, Bcom Accounting,Subject 106, compulsory
+7, Mr B, Bcom Auditing,Subject 107, elective
+8, Mr C, Eng Mech,Subject 108, compulsory
+9, Mr C, Eng Mech,Subject 109, compulsory
+10, Mr C, Eng Civil,Subject 110, compulsory
+11, Mr C, Eng Civil,Subject 111, compulsory
+12, Mr D, BSc Comp Sci,Subject 112, compulsory
+13, Mr D, BSc Comp Sci,Subject 113, compulsory
+14, Mr D, BSc Mathematics,Subject 114, compulsory
+15, Mr E, BSc Mathematics,Subject 115, compulsory
+16, Mr E, Bcom Business,Subject 116, compulsory
+17, Mr E, BSc Comp Sci,Subject 117, compulsory
+18, Mr E, BSc Comp Sci,Subject 118, compulsory
+19, Mr X, BSc Mathematics,Subject 119, compulsory
+20, Mr X, BSc Mathematics,Subject 120, compulsory
+21, Mr X, Bcom Business,Subject 121, compulsory
+22, Mr Y, Bcom Accounting,Subject 122, compulsory
+23, Mr Y, Bcom Accounting,Subject 123, compulsory
+24, Mr Y, Bcom Auditing,Subject 124, compulsory
+25, Mr Z, Eng Mech,Subject 125, compulsory
+26, Mr Z, Eng Mech,Subject 126, compulsory
+27, Mr Z, Eng Civil,Subject 127, compulsory
+28, Mr Z, Eng Civil,Subject 128, compulsory
