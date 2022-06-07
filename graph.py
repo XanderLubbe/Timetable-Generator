@@ -20,7 +20,7 @@ class Graph:
     def graphColouring(self):
 
         availableColours = ["red","blue","green","yellow","orange","pink","purple","turquoise"]
-        nodesLength =  len(self.nodes)
+        # nodesLength =  len(self.nodes)
         
         self.nodes[0].colour = availableColours[0]
         

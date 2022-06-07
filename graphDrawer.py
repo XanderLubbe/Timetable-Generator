@@ -12,7 +12,7 @@ class GraphDrawer:
 
     def generateNodes(self):
         for item in self.nodes:
-            self.nt.add_node(item.nodeID, size=20, color=item.colour)
+            self.nt.add_node(item.nodeID, size=20, color=item.colour, label = item.label, title = item.title)
 
     def generateEdges(self):
         for node in self.nodes:
