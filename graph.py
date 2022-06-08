@@ -1,5 +1,6 @@
 
 from node import Node
+import copy
 
 
 class Graph:
@@ -13,14 +14,14 @@ class Graph:
 
     def graphColouring(self):
 
-        availableColours = ["red","blue","green","yellow","orange","pink","purple","turquoise", "black", "grey", "silver", "lime", "teal", "navy", "salom"]
-        # nodesLength =  len(self.nodes)
+        allColours = ["red","blue","green","yellow","orange","pink","purple","turquoise", "black", "grey", "silver", "lime", "teal", "navy", "salom"]
+        totalUsedColours = set()
         
-        self.nodes[0].colour = availableColours[0]
-        
-        usedColours = []
+        self.nodes[0].colour = allColours[0]
 
         for node in self.nodes:
+            usedColours = []
+            availableColours = copy.deepcopy(allColours)
            
             if node == self.nodes[0]:
                 continue
@@ -37,8 +38,12 @@ class Graph:
                 availableColours.remove(colours)
 
             node.colour = availableColours[0]
-            availableColours = ["red","blue","green","yellow","orange","pink","purple","turquoise", "black", "grey", "silver", "lime", "teal", "navy", "salom"]
-            usedColours = []
+            totalUsedColours.add(node.colour)
+            totalUsedColours.update(usedColours)
+        
+        return len(totalUsedColours)
+            
+
         
         
 
