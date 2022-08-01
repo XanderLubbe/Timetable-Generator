@@ -18,7 +18,7 @@ class DataHandler():
                     line_count += 1
 
                 else:
-                    entry = Entry(row[0],row[1],row[2],row[3],row[4])
+                    entry = Entry(row[0], row[1], row[2], row[3], row[4])
                     entryList.append(entry)
                     line_count += 1
         random.shuffle(entryList)

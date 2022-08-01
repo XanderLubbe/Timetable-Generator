@@ -11,7 +11,7 @@ import math
 
 
 
-testQuantity = 100
+
 
 dataHandler = DataHandler('mockData.csv')
 entryData = dataHandler.createEntries()
@@ -19,29 +19,38 @@ entryData = dataHandler.createEntries()
 entryHandler = EntryHandler(entryData)
 nodeData = entryHandler.createNodes()
 
-bestResult = None
-leastUsedColours = math.inf
+# For testing purposes, the results were taken form 100 runs to find the most efficient starting point
 
-for i in range(testQuantity):
-    tempNodes = copy.deepcopy(nodeData)
-    random.shuffle(tempNodes)
+# testQuantity = 100
+# bestResult = None
+# leastUsedColours = math.inf
 
-    edgeHandler = EdgeHandler(tempNodes)
-    edgeHandler.createEdges()
+# for i in range(testQuantity):
+#     tempNodes = copy.deepcopy(nodeData)
+#     random.shuffle(tempNodes)
+#
+#     edgeHandler = EdgeHandler(tempNodes)
+#     edgeHandler.createEdges()
+#
+#     myGraph = Graph(tempNodes)
+#     colourCount = myGraph.graphColouring()
+#
+#     if i == 0 or colourCount < leastUsedColours:
+#         bestResult = tempNodes
+#         leastUsedColours = colourCount
 
-    myGraph = Graph(tempNodes)
-    colourCount = myGraph.graphColouring()  
+edgeHandler = EdgeHandler(nodeData)
+edgeHandler.createEdges()
 
-    if i == 0 or colourCount < leastUsedColours:
-        bestResult = tempNodes
-        leastUsedColours = colourCount
+myGraph = Graph(nodeData)
+myGraph.graphColouring()
 
-myTableGen = TableGenerator(bestResult)
+myTableGen = TableGenerator(nodeData)
 myTableGen.generateTable()
 
-drawGraph = GraphDrawer(bestResult)
+drawGraph = GraphDrawer(nodeData)
 drawGraph.draw()
 
-print(leastUsedColours)
+# print(leastUsedColours)
 
 

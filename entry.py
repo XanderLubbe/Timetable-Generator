@@ -1,5 +1,5 @@
 class Entry:
-    def __init__(self,id,profName,degree,subject, requirement):
+    def __init__(self, id, profName, degree, subject, requirement):
         self.id = id
         self.profName = profName
         self.degree = degree
